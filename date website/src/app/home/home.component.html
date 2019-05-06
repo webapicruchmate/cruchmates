@@ -1,0 +1,21 @@
+<div class="text-center">
+    <p>
+
+        <h2>CRUCHMATE DATING WEBSITE</h2>
+        <h1>Hi {{currentUser.firstName}}!
+        </h1>
+
+        <h3>Registered Users:</h3>
+        <p>
+
+            <li *ngFor="let user of users">
+                {{user.username}} ({{user.firstName}} {{user.lastName}})
+                <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+            </li>
+            <div class="img-center" align='middle'>
+                <img alt="centered image"
+                    src="https://cdn.shopify.com/s/files/1/1851/1205/files/free-delivery3_web.jpg?17305052574927822084.jpg"
+                    height="100" width="800">
+            </div>
+
+            <p></p>
